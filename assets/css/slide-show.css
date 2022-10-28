@@ -1,0 +1,26 @@
+.slide-show {
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.slide-show .mover {
+  height: 600px;
+  width: 6000;
+  background: url(../../images/hospitality/collage.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 12s linear infinite;
+}
+
+@keyframes moveSlideshow {
+  100%  { 
+    transform: translateX(-200%);
+   }
+}
