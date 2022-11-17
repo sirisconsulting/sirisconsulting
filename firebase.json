@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "siris-consulting",
+    "public": "y",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
