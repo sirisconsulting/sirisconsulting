@@ -1,3 +1,22 @@
 .sub-nav > ul {
   margin: 0
 }
+
+.logo {
+  width: 300px;
+}
+
+.small_logo {
+  width: 300px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 700px;
+  }
+  .small_logo {
+    width: 300px;
+  }
+
+}  

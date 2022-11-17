@@ -1,15 +1,15 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<meta
+  name="description"
+  content="Siris Consulting is a recruitment agency based in London, United Kingdom. We're here for all your recruitment needs so get in touch today.">
 <html>
 	<head>
 		<title>SIRIS Consulting</title>
+		<link rel="icon" href="assets/branding/icon.svg" type="image/icon type">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -34,7 +34,9 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>SIRIS Consulting</h1>
+							<h1><img class="logo" src="assets/branding/logo.png" alt="" data-position="center center" /></h1>
+							<br/>
+							<br/>
 							<p>40+ years in UK recruiting.<br />
 								40+ years as IT business owner in Europe, UK, USA and Canada.<br />
 								40+ years in Medical, IT, training and Education Institutes in India and Srilanka.<br /><br />
@@ -54,19 +56,19 @@
 									<h2>Nursing and Health Care</h2>
 									<p>Highly trained and experienced Nurses and Care workers for temporary and permanent roles <b><em>recruited from overseas</em></b></p>
 									<ul class="actions">
-										<!-- <li><a href="health_care.html" class="button">Learn more</a></li> -->
+										<li><a href="health_care.html" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/IT.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="images/IT.jpg" alt="" data-position="top center" /></a>	
 							<div class="content">
 								<div class="inner">
 									<h2>IT</h2>
 									<p>Experienced overseas talent for all IT needs from Legacy Development to Artificaial Intellegence and Automation, we identify right talent for all your needs, local, global and remote.</p>
 									<ul class="actions">
-										<!-- <li><a href="it.html" class="button">Learn more</a></li> -->
+										<li><a href="it.html" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -78,7 +80,7 @@
 									<h2>Hospitality</h2>
 									<p>From catering to management and everything in between all your hospitality staff requirements for both permanent and temporary staffing you need look no further.</p>
 									<ul class="actions">
-										<!-- <li><a href="hospitality.html" class="button">Learn more</a></li> -->
+										<li><a href="hospitality.html" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -132,7 +134,7 @@
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>...to help us recruit for you.</p>
+							<p>...to let us recruit for you.</p>
 							<div class="split style1">
 								<section>
 									<form name="contact" method="POST" data-netlify="true">
@@ -168,9 +170,9 @@
 									<ul class="contact">
 										<li>
 											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
+											<span>5 Emerald Court,<br />
+											Aycliffe Road, Borehamwood<br />
+											England, WD6 4HR</span>
 										</li>
 										<li>
 											<h3>Email</h3>
@@ -216,6 +218,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script type="module">
+				// Import the functions you need from the SDKs you need
+				import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+				import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+				// TODO: Add SDKs for Firebase products that you want to use
+				// https://firebase.google.com/docs/web/setup#available-libraries
+			  
+				// Your web app's Firebase configuration
+				// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+				const firebaseConfig = {
+				  apiKey: "AIzaSyAr5yLWr5n3Ue3zGr7uCn_tKtnl-tx8x9I",
+				  authDomain: "webapp-siris-consulting.firebaseapp.com",
+				  projectId: "webapp-siris-consulting",
+				  storageBucket: "webapp-siris-consulting.appspot.com",
+				  messagingSenderId: "17334356758",
+				  appId: "1:17334356758:web:e88da1d7cd55b6c1259e37",
+				  measurementId: "G-KDRE6043LV"
+				};
+			  
+				// Initialize Firebase
+				const app = initializeApp(firebaseConfig);
+				const analytics = getAnalytics(app);
+			  </script>
 	</body>
 </html>
