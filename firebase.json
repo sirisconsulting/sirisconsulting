@@ -9,7 +9,6 @@
     ]
   },
   "emulators": {
-
     "hosting": {
       "public": "main",
       "port": 5000,
